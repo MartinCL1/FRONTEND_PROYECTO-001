@@ -4,7 +4,6 @@
 */
 
 import headerBack from '../../assets/header.jpg'
-import PlantasHeader from '../shared/PlantasHeader'
 import './header.css'
 import { motion } from 'framer-motion'
 
@@ -21,7 +20,7 @@ function Header() {
 
         {/* Right side - Text */}
         <div className='w-full h-screen flex items-center justify-center p-8'>
-          <div className='text-black font-sora'>
+          <div className='text-black'>
             <motion.h1 className='border-b-4 text-2xl uppercase text-center md:text-5xl'
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
