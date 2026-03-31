@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nombre": "Gimnospermas",
+    "resumen": "Son plantas vasculares que producen semillas desnudas, es decir, no están encerradas en un fruto. Suelen encontrarse en árboles como los pinos y abetos."
+  },
+  {
+    "id": 2,
+    "nombre": "Gimnospermas",
+    "resumen": "Se caracterizan por tener estructuras reproductoras como conos y por adaptarse bien a climas fríos o templados. Su polinización suele depender del viento."
+  },
+  {
+    "id": 3,
+    "nombre": "Angiospermas",
+    "resumen": "Son plantas con flores cuyas semillas se desarrollan dentro de un fruto. Constituyen el grupo vegetal más diverso y abundante en la actualidad."
+  }
+]
