@@ -1,47 +1,56 @@
 import Especie from "./Especie/Especie"
 import especies from '../../store/especies.json'
+import ejemplos from '../../store/plantas.json'
 import CardEspecie from "./CardEspecie"
-import { AnimatePresence } from "motion/react"
+import { useEffect, useState } from "react"
 
 function Body() {
+  const [imagen, setImagen] = useState("");
+
+  useEffect(() => {
+    (async() => {
+      const linkImagen = await fetch("http://localhost:3000/api/v1/imagenes")
+      const imageResponse = await linkImagen.json()
+      
+      setImagen(imageResponse.imageUrl)
+    })()
+  }, [])
+
   return (
     <div className="px-8">
-      {
-        especies.map((especie, index) => (
-          <Especie key={index} imagen={especie.especie} especie={especie.nombre} descripcion={especie.descripcion} />
-        ))
-      }
-
-      <div className="flex max-w-full md:flex-row flex-col w-full h-auto gap-4 mb-8 flex-wrap justify-center">
-        <AnimatePresence mode="wait">
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"Linf"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"Liat"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"Li"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"fat"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"Linddfat"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"Linafat"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"Linaaaafat"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"Linaafat"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"adoas"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"ioeory"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"mv,nb"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"ñ{.á"} />
-          <CardEspecie imagen={"https://images.pexels.com/photos/31677026/pexels-photo-31677026/free-photo-of-hermosas-flores-de-delhi.jpeg?auto=compress&cs=tinysrgb&w=600"}
-            especie={"pasda"} />
-        </AnimatePresence>
+      <Especie key={"1"} imagen={especies[0].especie} especie={especies[0].nombre} descripcion={especies[0].descripcion} />
+      <div className="mb-4 columns-1 sm:columns-2 md:columns-4 lg:columns-4 gap-4">
+        {
+          ejemplos["gimnospermas"].map((especie, index) => (
+            <CardEspecie key={index} imagen={especie.imagen} especie={especie.nombre} descripcion={especie.descripcion} />
+          ))
+        }
       </div>
+
+      <Especie key={"2"} imagen={especies[1].especie} especie={especies[1].nombre} descripcion={especies[1].descripcion} />
+
+      <div className="mb-4 columns-1 sm:columns-2 md:columns-4 lg:columns-4 gap-4">
+        {
+          ejemplos["briofitas"].map((especie, index) => (
+            <CardEspecie key={index} imagen={especie.imagen} especie={especie.nombre} descripcion={especie.descripcion} />
+          ))
+        }
+      </div>
+      <Especie key={"3"} imagen={especies[2].especie} especie={especies[2].nombre} descripcion={especies[2].descripcion} />
+      <div className="mb-4 columns-1 sm:columns-2 md:columns-4 lg:columns-4 gap-4">
+        {
+          ejemplos["angiospermas"].map((especie, index) => (
+            <CardEspecie key={index} imagen={especie.imagen} especie={especie.nombre} descripcion={especie.descripcion} />
+          ))
+        }
+      </div>
+      {/* {imagen && (
+        <img
+          src={imagen}
+          alt="Imagen desde ImageKit"
+        />
+      )} */}  
+      
     </div>
   )
 }
