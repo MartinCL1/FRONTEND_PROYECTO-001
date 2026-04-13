@@ -16,7 +16,7 @@ const useGet = (nombrePlanta) => {
         try {
             setCargando(true)
             setError(null)
-            const resPlanta = await fetch(`https://backend-proyecto-001.vercel.app/api/v1/imagenes/${nombrePlanta}`, { credentials: "include" });
+            const resPlanta = await fetch(`https://backend-proyecto-001.vercel.app/api/v1/imagenes/${nombrePlanta}`);
             const urlPlanta = await resPlanta.json();
             setRespuesta(urlPlanta.imagenes)
             setCargando(false)
