@@ -3,97 +3,97 @@
     {
       "nombre": "Pino silvestre",
       "descripcion": "Árbol conífero común en Europa, conocido por sus piñas y uso en construcción.",
-      "imagen": "",
+      "identificador": "pino_silvestre",
       "alto": 540
     },
     {
       "nombre": "Abeto blanco",
       "descripcion": "Árbol de hoja perenne con ramas horizontales, nativo de Norteamérica.",
-      "imagen": "",
+      "identificador": "abeto_blanco",
       "alto": 760
     },
     {
       "nombre": "Cedro del Líbano",
       "descripcion": "Árbol majestuoso con ramas extendidas, símbolo de resistencia.",
-      "imagen": "",
+      "identificador": "cedro_libano",
       "alto": 620
     },
     {
       "nombre": "Secuoya gigante",
       "descripcion": "Uno de los árboles más grandes del mundo, vive miles de años.",
-      "imagen": "",
+      "identificador": "secuoya_gigante",
       "alto": 880
     },
     {
       "nombre": "Pino ponderosa",
       "descripcion": "Árbol de crecimiento rápido, común en bosques occidentales de EE.UU.",
-      "imagen": "",
+      "identificador": "pino_ponderosa",
       "alto": 680
     },
     {
       "nombre": "Araucaria",
       "descripcion": "Árbol con forma de cono, nativo de América del Sur.",
-      "imagen": "",
+      "identificador": "araucaria",
       "alto": 500
     },
     {
       "nombre": "Ciprés calvo",
       "descripcion": "Árbol caducifolio con raíces aéreas, común en pantanos.",
-      "imagen": "",
+      "identificador": "cipres_calvo",
       "alto": 790
     },
     {
       "nombre": "Pino piñonero",
       "descripcion": "Produce piñas pequeñas con semillas comestibles.",
-      "imagen": "",
+      "identificador": "pino_piñonero",
       "alto": 610
     },
     {
       "nombre": "Abeto balsámico",
       "descripcion": "Usado para extraer bálsamo, nativo de Norteamérica.",
-      "imagen": "",
+      "identificador": "abeto_balsamico",
       "alto": 850
     },
     {
       "nombre": "Tsuga",
       "descripcion": "Árbol similar al abeto, conocido por su madera blanda.",
-      "imagen": "",
+      "identificador": "tsuga",
       "alto": 560
     },
     {
       "nombre": "Pino laricio",
       "descripcion": "Árbol mediterráneo con piñas grandes.",
-      "imagen": "",
+      "identificador": "pino_laricio",
       "alto": 720
     },
     {
       "nombre": "Cedro rojo",
       "descripcion": "Árbol de crecimiento lento, apreciado por su madera resistente.",
-      "imagen": "",
+      "identificador": "cedro_rojo",
       "alto": 640
     },
     {
       "nombre": "Pino negro",
       "descripcion": "Árbol de montaña con corteza oscura.",
-      "imagen": "",
+      "identificador": "pino_negro",
       "alto": 900
     },
     {
       "nombre": "Abeto de Douglas",
       "descripcion": "Árbol híbrido común en plantaciones forestales.",
-      "imagen": "",
+      "identificador": "abeto_de_douglas",
       "alto": 600
     },
     {
       "nombre": "Ciprés de Lawson",
       "descripcion": "Árbol ornamental con follaje verde brillante.",
-      "imagen": "",
+      "identificador": "cipres_lawson",
       "alto": 780
     },
     {
       "nombre": "Pino blanco",
       "descripcion": "Árbol de alta montaña con agujas largas.",
-      "imagen": "",
+      "identificador": "pino_blanco",
       "alto": 530
     }
   ],
@@ -101,97 +101,97 @@
     {
       "nombre": "Sphagnum",
       "descripcion": "Musgo que forma turberas, importante para la retención de agua.",
-      "imagen": "",
+      "identificador": "sphagnum",
       "alto": 610
     },
     {
       "nombre": "Polytrichum commune",
       "descripcion": "Musgo común con hojas largas y nervadas.",
-      "imagen": "",
+      "identificador": "commune",
       "alto": 840
     },
     {
       "nombre": "Bryum argenteum",
       "descripcion": "Musgo plateado que crece en suelos secos.",
-      "imagen": "",
+      "identificador": "argenteum",
       "alto": 520
     },
     {
       "nombre": "Funaria hygrometrica",
       "descripcion": "Musgo pionero que aparece después de incendios.",
-      "imagen": "",
+      "identificador": "funaria",
       "alto": 760
     },
     {
       "nombre": "Marchantia polymorpha",
       "descripcion": "Hepática con forma de paraguas, crece en suelos húmedos.",
-      "imagen": "",
+      "identificador": "marchantia",
       "alto": 630
     },
     {
       "nombre": "Riccia fluitans",
       "descripcion": "Hepática flotante en aguas estancadas.",
-      "imagen": "",
+      "identificador": "riccia_fluitans",
       "alto": 900
     },
     {
       "nombre": "Anthoceros punctatus",
       "descripcion": "Antoceros con esporas en cápsulas alargadas.",
-      "imagen": "",
+      "identificador": "punctacus",
       "alto": 560
     },
     {
       "nombre": "Pellia epiphylla",
       "descripcion": "Hepática que crece en rocas húmedas.",
-      "imagen": "",
+      "identificador": "pellia",
       "alto": 700
     },
     {
       "nombre": "Conocephalum conicum",
       "descripcion": "Hepática con olor a curry, común en arroyos.",
-      "imagen": "",
+      "identificador": "conicum",
       "alto": 580
     },
     {
       "nombre": "Blasia pusilla",
       "descripcion": "Hepática pequeña que vive en simbiosis con cianobacterias.",
-      "imagen": "",
+      "identificador": "blasia_pusilla",
       "alto": 820
     },
     {
       "nombre": "Targionia hypophylla",
       "descripcion": "Hepática con escamas en el tallo.",
-      "imagen": "",
+      "identificador": "targionia",
       "alto": 540
     },
     {
       "nombre": "Fossombronia pusilla",
       "descripcion": "Hepática diminuta que crece en suelos perturbados.",
-      "imagen": "",
+      "identificador": "pusilla",
       "alto": 740
     },
     {
       "nombre": "Sphaerocarpos texanus",
       "descripcion": "Hepática con esporas esféricas.",
-      "imagen": "",
+      "identificador": "texanus",
       "alto": 600
     },
     {
       "nombre": "Notothylas orbicularis",
       "descripcion": "Antoceros con talo orbicular.",
-      "imagen": "",
+      "identificador": "notothylas_orbicularis",
       "alto": 860
     },
     {
       "nombre": "Phaeoceros laevis",
       "descripcion": "Antoceros con esporas lisas.",
-      "imagen": "",
+      "identificador": "laevis",
       "alto": 620
     },
     {
       "nombre": "Dumortiera hirsuta",
       "descripcion": "Hepática con pelos en el margen.",
-      "imagen": "",
+      "identificador": "hirsuta",
       "alto": 780
     }
   ],
@@ -199,97 +199,97 @@
     {
       "nombre": "Rosa",
       "descripcion": "Flor ornamental con espinas, símbolo de amor.",
-      "imagen": "",
+      "identificador": "rosa",
       "alto": 640
     },
     {
       "nombre": "Roble",
       "descripcion": "Árbol caducifolio con bellotas, madera dura.",
-      "imagen": "",
+      "identificador": "roble",
       "alto": 880
     },
     {
       "nombre": "Girasol",
       "descripcion": "Planta anual que sigue el sol, produce semillas oleaginosas.",
-      "imagen": "",
+      "identificador": "girasol",
       "alto": 560
     },
     {
       "nombre": "Tulipán",
       "descripcion": "Bulbo floral primaveral, originario de Asia.",
-      "imagen": "",
+      "identificador": "tulipan",
       "alto": 760
     },
     {
       "nombre": "Cerezo",
       "descripcion": "Árbol frutal con flores rosadas en primavera.",
-      "imagen": "",
+      "identificador": "cerezo",
       "alto": 620
     },
     {
       "nombre": "Lavanda",
       "descripcion": "Arbusto aromático usado en perfumería.",
-      "imagen": "",
+      "identificador": "lavanda",
       "alto": 900
     },
     {
       "nombre": "Hortensia",
       "descripcion": "Arbusto con inflorescencias grandes y coloridas.",
-      "imagen": "",
+      "identificador": "hortensia",
       "alto": 680
     },
     {
       "nombre": "Magnolia",
       "descripcion": "Árbol con flores grandes y fragantes.",
-      "imagen": "",
+      "identificador": "magnolia",
       "alto": 540
     },
     {
       "nombre": "Orquídea",
       "descripcion": "Flor exótica con formas variadas, epífita.",
-      "imagen": "",
+      "identificador": "orquidea",
       "alto": 820
     },
     {
       "nombre": "Clavel",
       "descripcion": "Flor perenne con pétalos fruncidos.",
-      "imagen": "",
+      "identificador": "clavel",
       "alto": 600
     },
     {
       "nombre": "Lirio",
       "descripcion": "Planta bulbosa con flores trompeta.",
-      "imagen": "",
+      "identificador": "lirio",
       "alto": 740
     },
     {
       "nombre": "Geranio",
       "descripcion": "Planta ornamental con flores en racimos.",
-      "imagen": "",
+      "identificador": "geranio",
       "alto": 520
     },
     {
       "nombre": "Petunia",
       "descripcion": "Flor anual con pétalos acampanados.",
-      "imagen": "",
+      "identificador": "petunia",
       "alto": 860
     },
     {
       "nombre": "Begonia",
       "descripcion": "Planta con flores asimétricas y hojas decorativas.",
-      "imagen": "",
+      "identificador": "begonia",
       "alto": 630
     },
     {
       "nombre": "Dalia",
       "descripcion": "Flor tuberosa con pétalos en capas.",
-      "imagen": "",
+      "identificador": "dalia",
       "alto": 780
     },
     {
       "nombre": "Amapola",
       "descripcion": "Flor silvestre con pétalos delicados.",
-      "imagen": "",
+      "identificador": "amapola",
       "alto": 560
     }
   ]
