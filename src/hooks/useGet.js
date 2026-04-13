@@ -1,6 +1,5 @@
 //# RECORDAR CAMBIAR  LA LOGICA A UN FICHERO DIFERENTE.
 import { useEffect, useState } from "react";
-const IMAGENES_ENDPOINT = import.meta.env.VITE_IMAGENES_ENDPOINT
 
 const useGet = (nombrePlanta) => {
     const [cargando, setCargando] = useState(null)
@@ -17,7 +16,7 @@ const useGet = (nombrePlanta) => {
         try {
             setCargando(true)
             setError(null)
-            const resPlanta = await fetch(`${IMAGENES_ENDPOINT}/${nombrePlanta}`, { credentials: "include" });
+            const resPlanta = await fetch(`https://backend-proyecto-001.vercel.app/api/v1/imagenes/${nombrePlanta}`, { credentials: "include" });
             const urlPlanta = await resPlanta.json();
             setRespuesta(urlPlanta.imagenes)
             setCargando(false)
