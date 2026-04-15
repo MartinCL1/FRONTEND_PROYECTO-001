@@ -4,8 +4,8 @@ function Overlay({ especie }) {
 
     return (
         <motion.div className={`flex w-full h-full items-center justify-center text-center flex-col gap-4 absolute left-0 text-white`}
-            initial={{backdropFilter: "blur(0px)"}}
-            whileInView={{ backdropFilter: "blur(5px)", transition: { duration: 1, delay: .5 } }}
+            initial={{backdropFilter: "blur(8px)"}}
+            whileInView={{ backdropFilter: "blur(0px)", transition: { duration: 1, delay: 1 } }}
         >
             <motion.h1 whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }} initial={{ opacity: 0, y: 20 }} 
                 className="md:text-6xl text-4xl">

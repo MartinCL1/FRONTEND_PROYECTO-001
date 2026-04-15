@@ -10,10 +10,24 @@ function CardEspecie({ especie, imagen, identificador }) {
 
   const [mostrarEspecie, setMostrarEspecie] = useState(true)
   const [cargado, setCargado] = useState(false)
-  const [ planta, setPlanta ] = useState(null)
+  const [planta, setPlanta] = useState(null)
 
-  const mostrarInformacionEspecimen = () => setMostrarEspecie(false)
-  const ocultarInformacionEspecimen = () => setMostrarEspecie(true)
+  const mostrarInformacionEspecimen = () => {
+    desactivarScroll()
+    setMostrarEspecie(false)
+  }
+  const ocultarInformacionEspecimen = () => {
+    activarScroll()
+    setMostrarEspecie(true)
+  }
+
+  const desactivarScroll = () => {
+    document.body.style.overflow = "hidden  "
+  }
+
+  const activarScroll = () => {
+    document.body.style.overflow = "auto"
+  }
 
   const cargadoCompletamente = () => {
     setCargado(true)
@@ -26,7 +40,7 @@ function CardEspecie({ especie, imagen, identificador }) {
 
   return !cargado ? <CardEspecieSkeleton key={imagen} url={imagen} carga={cargadoCompletamente} /> : (
     <div>
-      <div className={`mb-4 break-inside-avoid relative rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-400`} >
+      <div className={`mb-4 break-inside-avoid relative rounded-xl border border-slate-300 bg-white overflow-hidden shadow-md hover:scale-102 transition duration-400`} >
         <motion.div
           onClick={mostrarInformacionEspecimen}
           layoutId={`card-${identificador}`}
@@ -43,7 +57,7 @@ function CardEspecie({ especie, imagen, identificador }) {
             alt={especie}
             className="w-full h-auto block rounded"
           />
-          <div className='p-2 capitalize'>
+          <div className='p-2 capitalize text-center'>
             <p>{planta?.nombre}</p>
           </div>
         </motion.div>
@@ -52,10 +66,10 @@ function CardEspecie({ especie, imagen, identificador }) {
       <AnimatePresence mode="wait">
         {
           !mostrarEspecie && (
-            <motion.div className='fixed inset-0 z-20 bg-black/50 flex items-center justify-center'
+            <motion.div className='fixed inset-0 z-20 bg-black/50 flex items-center justify-center overscroll-y-contain'
               onClick={ocultarInformacionEspecimen}
             >
-              <motion.div layoutId={`card-${identificador}`} className='md:w-200 md:h-fit flex bg-white flex-col md:flex-row justify-between items-center rounded-xs p-6'>
+              <motion.div layoutId={`card-${identificador}`} className='md:w-200 gap-y-10 w-11/12 md:h-fit flex bg-white flex-col md:flex-row justify-between items-center rounded-sm p-8 max-h-150'>
                 <CloseBoton whileHover={{ rotate: "90deg", scale: 1.2 }} className='absolute top-4 stroke-white cursor-pointer stroke-3 size-8 right-4' onClick={ocultarInformacionEspecimen} />
                 <div className="md:w-1/3  flex items-center justify-center bg-black overflow-hidden rounded-[5px]">
                   <motion.img className="size-full object-contain" loading='lazy' src={imagen} alt={especie} />

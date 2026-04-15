@@ -1,9 +1,11 @@
-const CardEspecieSkeleton = ({ url, carga }) => {
+import React from "react";
+
+const CardEspecieSkeleton = React.memo(({ url, carga }) => {
     return (
         <div className="mb-4 break-inside-avoid relative rounded-xl animate-pulse bg-gray-200 w-full h- 20">
-            <img src={url} className="opacity-0" alt="" onLoad={carga} />
+            <img src={url} className="opacity-0" alt="" onLoad={carga} loading="lazy" />
         </div>
     )
-}
+})
 
 export default CardEspecieSkeleton;

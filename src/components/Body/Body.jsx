@@ -1,5 +1,5 @@
 import React from "react"
-const PlantasBanner = React.lazy(()=> import('./PlantasBanner'))
+const PlantasBanner = React.lazy(()=> import('./Especie/PlantasBanner'))
 
 function Body() {
   return (
