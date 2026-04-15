@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import cerezo from '../../assets/cerezo.jpg'
 import { AnimatePresence, motion, useInView, useScroll, useTransform } from 'motion/react'
 
