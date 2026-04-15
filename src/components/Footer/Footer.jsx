@@ -10,7 +10,7 @@ const Footer = React.memo(() => {
     const inview = useInView(overlayRef, { amount: .9 })
 
     const transformOverlay = useTransform(scrollYProgress, [0, 1], ["100%", "-100%"])
-    const backgroundOverlay = useTransform(scrollYProgress, [0, 1], ["#000000E6", "#00000019"])
+    const backgroundOverlay = useTransform(scrollYProgress, [0, .8], ["#000000E6", "#00000019"])
 
     return (
         <footer className="h-dvh relative overflow-hidden" ref={footer}>
