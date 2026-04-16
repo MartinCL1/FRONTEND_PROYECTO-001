@@ -10,11 +10,11 @@ const Footer = React.memo(() => {
     const inview = useInView(overlayRef, { amount: .9 })
 
     const transformOverlay = useTransform(scrollYProgress, [0, 1], ["100%", "-100%"])
-    const backgroundOverlay = useTransform(scrollYProgress, [0, .8], ["#000000E6", "#00000019"])
+    const backgroundOverlay = useTransform(scrollYProgress, [.6, 0], ["#00000019", "#000"])
 
     return (
         <footer className="h-dvh relative overflow-hidden" ref={footer}>
-            <img src={cerezo} className='object-cover w-full h-full' alt="asdas" />
+            <img src={cerezo} className='object-cover w-full h-full backdrop-blur-xl mask-[radial-gradient(circle,black_50%,transparent_100%)]' alt="asdas" />
 
             <motion.div className='absolute h-full text-white flex justify-center items-center w-full'
                 style={{ top: transformOverlay, background: backgroundOverlay }}
@@ -22,13 +22,13 @@ const Footer = React.memo(() => {
             >
                 <AnimatePresence>
                     {
-                        inview && <motion.div initial={{ opacity: 0, y: -100 }}
-                            animate={{ y: 0, opacity: 1 }}
+                        inview && <motion.div initial={{ opacity: 0, x: 300 }}
+                            animate={{ x: 0, opacity: 1 }}
                             exit={{ opacity: 0, x: -300 }}
                             transition={{ ease: "easeInOut", bounce: 0 }}
                             className='flex flex-col items-center gap-4 text-center p-8'>
-                            <h1 className='text-5xl'>
-                                DATO INTERESANTE
+                            <h1 className='text-5xl text-black text-shadow-2xs text-shadow-white'>
+                                Quick Fact
                             </h1>
                             <p className='max-w-xl text-base md:text-lg'>
                                 Las plantas pueden comunicarse entre sí a través de redes subterráneas de hongos y enviar señales químicas para avisar a otras de un ataque de insectos.
