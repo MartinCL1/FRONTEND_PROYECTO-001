@@ -3,17 +3,47 @@
   # Recordatorio: Optimizar la imagen
 */
 
+import { useContext, useEffect, useState } from 'react'
 import headerBack from '../../assets/header.jpg'
 import './header.css'
 import { motion } from 'framer-motion'
+import { Contexto } from '../../Context'
 
 function Header() {
+
+  const { respuesta, setRespuesta } = useContext(Contexto)
+  const [headerImage, setHeaderImage] = useState(null)
+
+  useEffect(() => {
+    if (!respuesta?.length) return
+    const [header] = respuesta?.filter(element => element.imagenIdentificador === "header")
+    actualizarContexto(respuesta)
+    setHeaderImage(header.imagenFirmada)
+  }, [respuesta])
+
+  const actualizarContexto = (arrayElementos) => {
+    // const {nuevoArray} = arrayElementos?.map((elements, index) => {
+    //  return {[elements.imagenIdentificador]: elements.imagenFirmada} 
+    // })
+    // console.log(nuevoArray)
+    let nuevoArray = {}
+    arrayElementos?.map((elemento, indice) => {
+      nuevoArray = {
+        ...nuevoArray,
+        [elemento.imagenIdentificador]: elemento 
+      }
+    })
+
+    console.log(nuevoArray  )
+    setRespuesta(nuevoArray)
+  }
+
   return (
     <header className="h-screen w-full">
       <div className="h-screen w-full flex md:flex flex-col md:flex-row">
         {/* Left side - Image */}
         <div className="w-full h-screen overflow-hidden">
-          <img src={headerBack} alt="Header"
+          <img src={headerImage} alt="Header"
             className='w-full h-full object-cover mask-gradient object-center'
           />
         </div>
@@ -45,4 +75,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;

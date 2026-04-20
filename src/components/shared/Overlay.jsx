@@ -8,7 +8,7 @@ function Overlay({ especie }) {
             whileInView={{ backdropFilter: "blur(0px)", transition: { duration: 1, delay: 1 } }}
         >
             <motion.h1 whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }} initial={{ opacity: 0, y: 20 }} 
-                className="md:text-6xl text-4xl">
+                className="md:text-6xl text-4xl text-stone-50 [-webkit-text-stroke:.75px_gray]">
                 {especie.nombre}
             </motion.h1>
             <motion.p 
