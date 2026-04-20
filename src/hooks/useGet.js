@@ -18,7 +18,7 @@ const useGet = ( path ) => {
         try {
             setCargando(true)
             setError(null)
-            const resPlanta = await fetch(`http://localhost:3000/api/v1/imagenes/${path}`);
+            const resPlanta = await fetch(`https://backend-proyecto-001.vercel.app/api/v1/imagenes/${path}`);
             const urlPlanta = await resPlanta.json();
             setRespuesta(urlPlanta.imagenes)
             setCargando(false)
