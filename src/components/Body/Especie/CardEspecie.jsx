@@ -52,10 +52,10 @@ function CardEspecie({ especie, imagen, identificador }) {
           transition={{ duration: 0.25 }}
         >
           <motion.img
-            loading='lazy'
             src={imagen}
             alt={especie}
             className="w-full h-auto block rounded"
+            loading='lazy'
           />
           <div className='p-2 capitalize text-center'>
             <p>{planta?.nombre}</p>
@@ -72,11 +72,11 @@ function CardEspecie({ especie, imagen, identificador }) {
               <motion.div layoutId={`card-${identificador}`} className='md:w-200 gap-y-10 w-11/12 md:h-fit flex bg-white flex-col md:flex-row justify-between items-center rounded-sm p-8 max-h-150'>
                 <CloseBoton whileHover={{ rotate: "90deg", scale: 1.2 }} className='absolute top-4 stroke-white cursor-pointer stroke-3 size-8 right-4' onClick={ocultarInformacionEspecimen} />
                 <div className="md:w-1/3  flex items-center justify-center bg-black overflow-hidden rounded-[5px]">
-                  <motion.img className="size-full object-contain" loading='lazy' src={imagen} alt={especie} />
+                  <motion.img className="size-full object-contain" src={imagen} alt={especie} />
                 </div>
                 <div className='flex flex-col w-full md:w-1/2 gap-4' layoutId={`card-title-${identificador}`} >
                   <h2 className='text-3xl font-bold w-full text-center capitalize'>{planta.nombre}</h2>
-                  <p className='text-md md:text-center'>{planta.descripcion}</p>
+                  <p className='text-md text-center'>{planta.descripcion}</p>
                 </div>
               </motion.div>
             </motion.div>
