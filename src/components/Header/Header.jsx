@@ -4,7 +4,6 @@
 */
 
 import { useContext, useEffect, useState } from 'react'
-import headerBack from '../../assets/header.jpg'
 import './header.css'
 import { motion } from 'framer-motion'
 import { Contexto } from '../../Context'
