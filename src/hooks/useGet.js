@@ -1,37 +1,41 @@
 //# RECORDAR CAMBIAR  LA LOGICA A UN FICHERO DIFERENTE.
 import { useEffect, useState } from "react";
+import { obtenerInformacion } from "../services/plantas.get.service";
 
 const PATH = import.meta.env.VITE_IMAGENES_ENDPOINT
 
-const useGet = ( path ) => {
+const useGet = (path) => {
     const [cargando, setCargando] = useState(true)
     const [error, setError] = useState(null)
     const [respuesta, setRespuesta] = useState(null)
 
     useEffect(() => {
         (async () => {
-            await obtenerInformacion();
-        })()
-    }, [])
-
-    const obtenerInformacion = async () => {
-        try {
             setCargando(true)
-            setError(null)
-            const resPlanta = await fetch(`https://backend-proyecto-001.vercel.app/api/v1/imagenes/${path}`);
-            const urlPlanta = await resPlanta.json();
-            setRespuesta(urlPlanta.imagenes)
-            setCargando(false)
+            try {
+                const respuestaImagenes = await obtenerInformacion(path);
+                setRespuesta(respuestaImagenes)
+            } catch (Error) {
+                setError(Error)
+            } finally {
+                setCargando(false)
+            }
+        })()
+    }, [path])
+
+    const singleObtenerInformacion = async (this_path) => {
+        setCargando(true)
+
+        try {
+            const resPlanta = await obtenerInformacion(this_path)
         } catch (error) {
-            setCargando(false)
-            setError(error.message)
-            console.log(error.message)
+            setError(error)
         } finally {
             setCargando(false)
         }
-    }
 
-    return { cargando, error, respuesta, setRespuesta }
-} 
+    }
+    return { cargando, error, respuesta, singleObtenerInformacion }
+}
 
 export default useGet;

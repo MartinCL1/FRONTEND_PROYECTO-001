@@ -5,24 +5,5 @@
                 rgb(0, 0, 0) 50%,
                 rgba(0, 0, 0, 0.63) 80%,
                 rgba(0, 0, 0, 0));
-    }
-   
-    .image {
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
     }   
-
-    .gimnospermas {
-        background-image: url(' ');
-    }
-
-    .briofitas {
-        background-image: url('');
-    }
-
-    .angiospermas {
-        background-image: url('');
-    }
-
 }

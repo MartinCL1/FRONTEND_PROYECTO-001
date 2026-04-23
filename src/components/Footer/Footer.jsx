@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import cerezo from '../../assets/cerezo.jpg'
 import { AnimatePresence, motion, useInView, useScroll, useTransform } from 'motion/react'
 import { Contexto } from '../../Context';
@@ -6,6 +6,13 @@ import { Contexto } from '../../Context';
 const Footer = React.memo(() => {
     const { respuesta, setRespuesta } = useContext(Contexto)
     const footer = useRef(null)
+    const [fondo, setFondo] = useState('')
+
+    useEffect(() => {
+        if (!respuesta) return
+        const fondo = respuesta?.find(item => item.imagenIdentificador == "cerezo");
+        if (fondo) setFondo(fondo.imagenFirmada);
+    }, [respuesta])
     const overlayRef = useRef(null)
 
     const { scrollYProgress } = useScroll({ target: footer, offset: ["start end", "end start"] })
@@ -16,7 +23,7 @@ const Footer = React.memo(() => {
 
     return (
         <footer className="h-dvh relative overflow-hidden" ref={footer}>
-            <img src={respuesta?.cerezo ? respuesta.cerezo?.imagenFirmada : ""} className='object-cover size-full backdrop-blur-xl mask-[radial-gradient(circle,black_50%,transparent_100%)]' alt="asdas" />
+            <img src={fondo} className='object-cover size-full backdrop-blur-xl mask-[radial-gradient(circle,black_50%,transparent_100%)]' alt="asdas" />
 
             <motion.div className='absolute h-full text-white flex justify-center items-center w-full'
                 style={{ top: transformOverlay, background: backgroundOverlay }}
