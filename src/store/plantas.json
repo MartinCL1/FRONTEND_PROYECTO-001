@@ -3,294 +3,246 @@
     {
       "nombre": "Pino silvestre",
       "descripcion": "Árbol conífero común en Europa, conocido por sus piñas y uso en construcción.",
-      "identificador": "pino_silvestre",
-      "alto": 540
+      "identificador": "pino_silvestre"
     },
     {
       "nombre": "Abeto blanco",
       "descripcion": "Árbol de hoja perenne con ramas horizontales, nativo de Norteamérica.",
-      "identificador": "abeto_blanco",
-      "alto": 760
+      "identificador": "abeto_blanco"
     },
     {
       "nombre": "Cedro del Líbano",
       "descripcion": "Árbol majestuoso con ramas extendidas, símbolo de resistencia.",
-      "identificador": "cedro_libano",
-      "alto": 620
+      "identificador": "cedro_libano"
     },
     {
       "nombre": "Secuoya gigante",
       "descripcion": "Uno de los árboles más grandes del mundo, vive miles de años.",
-      "identificador": "secuoya_gigante",
-      "alto": 880
+      "identificador": "secuoya_gigante"
     },
     {
       "nombre": "Pino ponderosa",
       "descripcion": "Árbol de crecimiento rápido, común en bosques occidentales de EE.UU.",
-      "identificador": "pino_ponderosa",
-      "alto": 680
+      "identificador": "pino_ponderosa"
     },
     {
       "nombre": "Araucaria",
       "descripcion": "Árbol con forma de cono, nativo de América del Sur.",
-      "identificador": "araucaria",
-      "alto": 500
+      "identificador": "araucaria"
     },
     {
       "nombre": "Ciprés calvo",
       "descripcion": "Árbol caducifolio con raíces aéreas, común en pantanos.",
-      "identificador": "cipres_calvo",
-      "alto": 790
+      "identificador": "cipres_calvo"
     },
     {
       "nombre": "Pino piñonero",
       "descripcion": "Produce piñas pequeñas con semillas comestibles.",
-      "identificador": "pino_piñonero",
-      "alto": 610
+      "identificador": "pino_piñonero"
     },
     {
       "nombre": "Abeto balsámico",
       "descripcion": "Usado para extraer bálsamo, nativo de Norteamérica.",
-      "identificador": "abeto_balsamico",
-      "alto": 850
+      "identificador": "abeto_balsamico"
     },
     {
       "nombre": "Tsuga",
       "descripcion": "Árbol similar al abeto, conocido por su madera blanda.",
-      "identificador": "tsuga",
-      "alto": 560
+      "identificador": "tsuga"
     },
     {
       "nombre": "Pino laricio",
       "descripcion": "Árbol mediterráneo con piñas grandes.",
-      "identificador": "pino_laricio",
-      "alto": 720
+      "identificador": "pino_laricio"
     },
     {
       "nombre": "Cedro rojo",
       "descripcion": "Árbol de crecimiento lento, apreciado por su madera resistente.",
-      "identificador": "cedro_rojo",
-      "alto": 640
+      "identificador": "cedro_rojo"
     },
     {
       "nombre": "Pino negro",
       "descripcion": "Árbol de montaña con corteza oscura.",
-      "identificador": "pino_negro",
-      "alto": 900
+      "identificador": "pino_negro"
     },
     {
       "nombre": "Abeto de Douglas",
       "descripcion": "Árbol híbrido común en plantaciones forestales.",
-      "identificador": "abeto_de_douglas",
-      "alto": 600
+      "identificador": "abeto_de_douglas"
     },
     {
       "nombre": "Ciprés de Lawson",
       "descripcion": "Árbol ornamental con follaje verde brillante.",
-      "identificador": "cipres_lawson",
-      "alto": 780
+      "identificador": "cipres_lawson"
     },
     {
       "nombre": "Pino blanco",
       "descripcion": "Árbol de alta montaña con agujas largas.",
-      "identificador": "pino_blanco",
-      "alto": 530
+      "identificador": "pino_blanco"
     }
   ],
   "briofitas": [
     {
       "nombre": "Sphagnum",
       "descripcion": "Musgo que forma turberas, importante para la retención de agua.",
-      "identificador": "sphagnum",
-      "alto": 610
+      "identificador": "sphagnum"
     },
     {
       "nombre": "Polytrichum commune",
       "descripcion": "Musgo común con hojas largas y nervadas.",
-      "identificador": "commune",
-      "alto": 840
+      "identificador": "commune"
     },
     {
       "nombre": "Bryum argenteum",
       "descripcion": "Musgo plateado que crece en suelos secos.",
-      "identificador": "argenteum",
-      "alto": 520
+      "identificador": "argenteum"
     },
     {
       "nombre": "Funaria hygrometrica",
       "descripcion": "Musgo pionero que aparece después de incendios.",
-      "identificador": "funaria",
-      "alto": 760
+      "identificador": "funaria"
     },
     {
       "nombre": "Marchantia polymorpha",
       "descripcion": "Hepática con forma de paraguas, crece en suelos húmedos.",
-      "identificador": "marchantia",
-      "alto": 630
+      "identificador": "marchantia"
     },
     {
       "nombre": "Riccia fluitans",
       "descripcion": "Hepática flotante en aguas estancadas.",
-      "identificador": "riccia_fluitans",
-      "alto": 900
+      "identificador": "riccia_fluitans"
     },
     {
       "nombre": "Anthoceros punctatus",
       "descripcion": "Antoceros con esporas en cápsulas alargadas.",
-      "identificador": "punctacus",
-      "alto": 560
+      "identificador": "punctacus"
     },
     {
       "nombre": "Pellia epiphylla",
       "descripcion": "Hepática que crece en rocas húmedas.",
-      "identificador": "pellia",
-      "alto": 700
+      "identificador": "pellia"
     },
     {
       "nombre": "Conocephalum conicum",
       "descripcion": "Hepática con olor a curry, común en arroyos.",
-      "identificador": "conicum",
-      "alto": 580
+      "identificador": "conicum"
     },
     {
       "nombre": "Blasia pusilla",
       "descripcion": "Hepática pequeña que vive en simbiosis con cianobacterias.",
-      "identificador": "blasia_pusilla",
-      "alto": 820
+      "identificador": "blasia_pusilla"
     },
     {
       "nombre": "Targionia hypophylla",
       "descripcion": "Hepática con escamas en el tallo.",
-      "identificador": "targionia",
-      "alto": 540
+      "identificador": "targionia"
     },
     {
       "nombre": "Fossombronia pusilla",
       "descripcion": "Hepática diminuta que crece en suelos perturbados.",
-      "identificador": "pusilla",
-      "alto": 740
+      "identificador": "pusilla"
     },
     {
       "nombre": "Sphaerocarpos texanus",
       "descripcion": "Hepática con esporas esféricas.",
-      "identificador": "texanus",
-      "alto": 600
+      "identificador": "texanus"
     },
     {
       "nombre": "Notothylas orbicularis",
       "descripcion": "Antoceros con talo orbicular.",
-      "identificador": "notothylas_orbicularis",
-      "alto": 860
+      "identificador": "notothylas_orbicularis"
     },
     {
       "nombre": "Phaeoceros laevis",
       "descripcion": "Antoceros con esporas lisas.",
-      "identificador": "laevis",
-      "alto": 620
+      "identificador": "laevis"
     },
     {
       "nombre": "Dumortiera hirsuta",
       "descripcion": "Hepática con pelos en el margen.",
-      "identificador": "hirsuta",
-      "alto": 780
+      "identificador": "hirsuta"
     }
   ],
   "angiospermas": [
     {
       "nombre": "Rosa",
       "descripcion": "Flor ornamental con espinas, símbolo de amor.",
-      "identificador": "rosa",
-      "alto": 640
+      "identificador": "rosa"
     },
     {
       "nombre": "Roble",
       "descripcion": "Árbol caducifolio con bellotas, madera dura.",
-      "identificador": "roble",
-      "alto": 880
+      "identificador": "roble"
     },
     {
       "nombre": "Girasol",
       "descripcion": "Planta anual que sigue el sol, produce semillas oleaginosas.",
-      "identificador": "girasol",
-      "alto": 560
+      "identificador": "girasol"
     },
     {
       "nombre": "Tulipán",
       "descripcion": "Bulbo floral primaveral, originario de Asia.",
-      "identificador": "tulipan",
-      "alto": 760
+      "identificador": "tulipan"
     },
     {
       "nombre": "Cerezo",
       "descripcion": "Árbol frutal con flores rosadas en primavera.",
-      "identificador": "cerezo",
-      "alto": 620
+      "identificador": "cerezo"
     },
     {
       "nombre": "Lavanda",
       "descripcion": "Arbusto aromático usado en perfumería.",
-      "identificador": "lavanda",
-      "alto": 900
+      "identificador": "lavanda"
     },
     {
       "nombre": "Hortensia",
       "descripcion": "Arbusto con inflorescencias grandes y coloridas.",
-      "identificador": "hortensia",
-      "alto": 680
+      "identificador": "hortensia"
     },
     {
       "nombre": "Magnolia",
       "descripcion": "Árbol con flores grandes y fragantes.",
-      "identificador": "magnolia",
-      "alto": 540
+      "identificador": "magnolia"
     },
     {
       "nombre": "Orquídea",
       "descripcion": "Flor exótica con formas variadas, epífita.",
-      "identificador": "orquidea",
-      "alto": 820
+      "identificador": "orquidea"
     },
     {
       "nombre": "Clavel",
       "descripcion": "Flor perenne con pétalos fruncidos.",
-      "identificador": "clavel",
-      "alto": 600
+      "identificador": "clavel"
     },
     {
       "nombre": "Lirio",
       "descripcion": "Planta bulbosa con flores trompeta.",
-      "identificador": "lirio",
-      "alto": 740
+      "identificador": "lirio"
     },
     {
       "nombre": "Geranio",
       "descripcion": "Planta ornamental con flores en racimos.",
-      "identificador": "geranio",
-      "alto": 520
+      "identificador": "geranio"
     },
     {
       "nombre": "Petunia",
       "descripcion": "Flor anual con pétalos acampanados.",
-      "identificador": "petunia",
-      "alto": 860
+      "identificador": "petunia"
     },
     {
       "nombre": "Begonia",
       "descripcion": "Planta con flores asimétricas y hojas decorativas.",
-      "identificador": "begonia",
-      "alto": 630
+      "identificador": "begonia"
     },
     {
       "nombre": "Dalia",
       "descripcion": "Flor tuberosa con pétalos en capas.",
-      "identificador": "dalia",
-      "alto": 780
+      "identificador": "dalia"
     },
     {
       "nombre": "Amapola",
       "descripcion": "Flor silvestre con pétalos delicados.",
-      "identificador": "amapola",
-      "alto": 560
+      "identificador": "amapola"
     }
   ]
 }
