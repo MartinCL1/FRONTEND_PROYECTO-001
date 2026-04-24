@@ -8,16 +8,22 @@ import './header.css'
 import { motion } from 'framer-motion'
 import { Contexto } from '../../Context'
 
-function Header ({ imagenHeader }) {
+function Header({ imagenHeader }) {
 
+  useEffect(() => {
+    console.log("Cargando imagen del header: ", imagenHeader) 
+  }, [imagenHeader])
+  
   return (
     <header className="h-screen w-full">
       <div className="h-screen w-full flex md:flex flex-col md:flex-row">
         {/* Left side - Image */}
         <div className="w-full h-screen overflow-hidden">
-          <img src={imagenHeader} fetchPriority='high' alt="Header"
-            className='w-full h-full object-cover mask-gradient object-center'
-          />
+          <picture>
+            <img src={imagenHeader} alt="Header" loading='eager'
+              className='w-full h-full object-cover mask-gradient object-center'
+            />
+          </picture>
         </div>
 
         {/* Right side - Text */}

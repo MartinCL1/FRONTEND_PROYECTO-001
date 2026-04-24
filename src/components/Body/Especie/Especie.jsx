@@ -10,12 +10,13 @@ function Especie({ especie, imagen }) {
    const fondo = respuesta?.find(elemento => elemento.imagenIdentificador === imagen)
    if (fondo) setImagenFondo(fondo.imagenFirmada)
 
+    console.log(fondo)
   }, [respuesta])
   
   return (
     <div className="h-dvh mt-20 mb-2 w-full flex items-center justify-center relative rounded-sm overflow-hidden">
       <div className={`w-full h-full rounded-m`}>
-        <img className="size-full object-cover" loading="lazy" src={imagenFondo} alt={imagenFondo} />
+        <img className="size-full object-cover" src={imagenFondo} alt={imagenFondo} />
       </div>
       <Overlay especie={especie} />
     </div>  

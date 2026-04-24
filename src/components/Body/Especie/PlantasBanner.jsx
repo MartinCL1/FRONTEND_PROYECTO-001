@@ -8,13 +8,16 @@ const CardEspecie = React.lazy(() => import('./CardEspecie'))
 const Especie = React.lazy(() => import("./Especie"));
 
 const PlantasBanner = ({ especieNombre }) => {
-  const {imagenHeader} = useContext(Contexto) 
+  const { imagenHeader } = useContext(Contexto)
   const [cargando, setCargando] = useState(true)
   const [error, setError] = useState(null)
   const [respuesta, setRespuesta] = useState(null)
 
   useEffect(() => { // UseEffect para cargar la informacion de las imagenes.
-    (async ()=> {
+    (async () => {
+
+      if (!imagenHeader) return
+      console.log("Cargando informacion de la especie: ", imagenHeader)
       setCargando(true)
       try {
         const inforamcion = await obtenerInformacion(especieNombre)
@@ -25,11 +28,12 @@ const PlantasBanner = ({ especieNombre }) => {
         setCargando(false)
       }
     })()
-  }, [ imagenHeader ])
+  }, [imagenHeader])
 
   return (cargando && !respuesta) ? <PlantasBannerSkeleton /> : (
     <div className="mt-50">
       <Especie key={especieNombre} imagen={especieNombre} especie={especies[especieNombre]} />
+
       <div className="mb-4 px-8 columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-8 py-5">
         {
           respuesta.imagenes?.map((especie, index) => (
