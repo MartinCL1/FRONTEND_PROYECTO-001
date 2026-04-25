@@ -55,7 +55,6 @@ function CardEspecie({ especie, imagen, identificador }) {
             src={imagen}
             alt={especie}
             className="w-full h-auto block rounded"
-            loading='lazy'
           />
           <div className='p-2 capitalize text-center'>
             <p>{planta?.nombre}</p>
