@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import cerezo from '../../assets/cerezo.jpg'
 import { AnimatePresence, motion, useInView, useScroll, useTransform } from 'motion/react'
 import { Contexto } from '../../Context';
 
 const Footer = React.memo(() => {
-    const { respuesta, setRespuesta } = useContext(Contexto)
+    const { respuesta } = useContext(Contexto)
     const footer = useRef(null)
     const [fondo, setFondo] = useState('')
 

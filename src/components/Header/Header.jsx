@@ -3,16 +3,11 @@
   # Recordatorio: Optimizar la imagen
 */
 
-import { useContext, useEffect, useLayoutEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './header.css'
 import { motion } from 'framer-motion'
-import { Contexto } from '../../Context'
 
 function Header({ imagenHeader }) {
-
-  useEffect(() => {
-    console.log("Cargando imagen del header: ", imagenHeader) 
-  }, [imagenHeader])
   
   return (
     <header className="h-screen w-full">

@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import useGet from "../../../hooks/useGet";
 import PlantasBannerSkeleton from "../../skeletons/Body/PlantasBannerSkeleton";
 import especies from '../../../store/especies.json'
 import { Contexto } from "../../../Context";
@@ -11,13 +10,11 @@ const PlantasBanner = ({ especieNombre }) => {
   const { imagenHeader } = useContext(Contexto)
   const [cargando, setCargando] = useState(true)
   const [error, setError] = useState(null)
-  const [respuesta, setRespuesta] = useState(null)
 
   useEffect(() => { // UseEffect para cargar la informacion de las imagenes.
     (async () => {
 
       if (!imagenHeader) return
-      console.log("Cargando informacion de la especie: ", imagenHeader)
       setCargando(true)
       try {
         const inforamcion = await obtenerInformacion(especieNombre)
