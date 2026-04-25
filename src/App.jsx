@@ -7,7 +7,7 @@ import { Contexto } from './Context'
 import useGet from './hooks/useGet'
 
 function App() {
-  const { respuesta, cargando, error } = useGet('Fondos/')
+  const { respuesta } = useGet('Fondos/')
   const [imagenHeader, setImagenHeader] = useState("")
 
   useEffect(() => {
